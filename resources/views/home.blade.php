@@ -25,13 +25,13 @@
                     </div>
                 </div>
             <div class="pt-4 font-weight-bold">
-                laragram
+                {{ $user->profile->title }}
             </div>
             <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid culpa ipsam, iusto minima sit voluptatibus? Incidunt, laborum, quaerat. Ab accusamus commodi consequatur doloremque exercitationem incidunt nemo, quibusdam sit. Provident?
+                {{ $user->profile->description }}
             </div>
             <div>
-                <a href="https://github.com/kwieczorek98" target="_blank">www.github.com/kwieczorek98</a>
+                <a href="{{ $user->profile->url }}" target="_blank">{{ $user->profile->url }}</a>
             </div>
         </div>
     </div>
